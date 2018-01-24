@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 3158177aaa
+    url: jdbc:mysql://47.93.97.234/biyou?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+
+server:
+  context-path: /biyou
