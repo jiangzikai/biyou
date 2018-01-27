@@ -25,6 +25,9 @@
                 font-size: 18px;
                 line-height: 20px;
             }
+            /* 底部条 */
+            .footer-nav{background-color: #000000;text-align:center;margin:0 auto;}
+            .font_color {color: #a8a8a8}
         </style>
     </head>
     <body>
@@ -39,7 +42,23 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid">
+        <div class="row" >
+            <div class="col-md-4" id="id4"></div>
+            <div class="col-md-8" id="id8"></div>
+        </div>
+    </div>
 
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="footer-nav">
+            <div class="container">
+                <span class='font_color'>Copyright © <a href="http://www.mybiyou.cn"><span class='font_color'>BiYou</span></a> （<a href="http://www.miitbeian.gov.cn/" target="_blank"><span class='font_color'>京ICP备15006668号-2</span></a>)</span>
+                <!--<span class='font_color'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
+                <br/>
+                <span class='font_color'>本站运行在<img alt="" th:src="@{images/aliyun.png}" width="30.2px" height="20px"/>阿里云+&nbsp;&nbsp;&nbsp;&nbsp;由云盾提供安全服务</span>
+            </div>
+        </div>
+    </nav>
     <script th:inline="javascript">
 
     </script>
