@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  * 主页面控制器
  */
 @Controller
-public class IndexController {
+public class HomeController {
     /**
      * index页跳转
      */
