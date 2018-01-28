@@ -37,6 +37,17 @@
                 padding-right: 20px;
                 padding-left: 20px;
             }
+            /**一句话签名在模块,距离底部距离调整*/
+            .paddfoot{
+                padding-bottom:56px;
+                text-align: center;
+            }
+            /**底部导航条的白边*/
+            .navbar-fixed-bottom{
+                bottom: 0;
+                margin-bottom: -9px;
+                border-width: 1px 0 0;
+            }
         </style>
     </head>
     <body>
@@ -46,33 +57,29 @@
                 <a class="navbar-brand" href="#">
                     <img class="imglogo" alt="Brand" th:src="@{images/logo.jpg}" width="60px" height="50px"/>
                 </a>
-                <!--<a class="navbar-brand" href="#"><b><abbr>MyBiYou</abbr></b></a>-->
                 <a class="navbar-brand" href="#"><font size='5'><b><abbr>BiYou</abbr></b></font></a>
             </div>
         </div>
     </nav>
     <div class="container-fluid">
         <div class="row" >
-            <div class="col-md-4" id="id4">
-                <div class="jumbotron" id="daohangBlock1" style="display:block">
-                    <li class="list-group-item">
-                        <font style="font-weight:bold;">从前车马很远 书信很慢 一生只够爱一个人--push by jxd</font><br/>
-                        <!--<font style="font-weight:bold;">${mesListItemIndex.index+1}、${mesListItem.msgtitle }</font><br/>-->
-                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${mesListItem.msgcontent }-->
-                    </li>
-                </div>
-            </div>
+            <div class="col-md-4" id="id4"></div>
             <div class="col-md-8" id="id8"></div>
         </div>
+    </div>
+    <!--一句签名模块-->
+    <div class="navbar-fixed-bottom paddfoot" id="" style="display:block">
+        <li class="list-group-item">
+            从前车马很远 书信很慢 一生只够爱一个人
+        </li>
     </div>
 
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="footer-nav">
             <div class="container">
                 <span class='font_color'>Copyright © <a href="http://www.mybiyou.cn"><span class='font_color'>BiYou</span></a> （<a href="http://www.miitbeian.gov.cn/" target="_blank"><span class='font_color'>京ICP备15006668号-2</span></a>)</span>
-                <!--<span class='font_color'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>-->
                 <br/>
-                <span class='font_color'>本站运行在<img alt="" th:src="@{images/aliyun.png}" width="30.2px" height="20px"/>阿里云+&nbsp;&nbsp;&nbsp;&nbsp;由云盾提供安全服务</span>
+                <span class='font_color'>本站运行在<img alt="" th:src="@{images/aliyun.png}" width="30.2px" height="20px"/>阿里云+&nbsp;云盾提供安全服务</span>
             </div>
         </div>
     </nav>
