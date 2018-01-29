@@ -71,8 +71,21 @@
                 <a class="navbar-brand" href="#">
                     <img class="imglogo" alt="Brand" th:src="@{images/logo.jpg}" width="60px" height="50px"/>
                 </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#"><font size='5'><b><abbr>BiYou</abbr></b></font></a>
             </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" name="userInfoOut" action="" method="post">
+                    <button type="button" class="btn btn-success" data-toggle="modal" onclick = "">登录</button><!--拉起微信第三方登陆-->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" onclick = "">注册</button>
+                </form>
+            </div><!--/.navbar-collapse -->
+
         </div>
     </nav>
     <div class="container-fluid">
